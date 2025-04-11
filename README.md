@@ -106,3 +106,43 @@ OWASP ZAP: A free and open-source tool, ideal for developers looking for cost-ef
 BEST PRACTICE FOR USING THE SAST
 -------------------------------------
 
+Best practices for effectively using Static Application Security Testing (SAST):
+-------------------------------------------------------------------------------------------------
+1- Integrate Early in the SDLC: Incorporate SAST tools at the earliest stages of the Software Development Life Cycle (SDLC). This helps catch vulnerabilities during development, reducing the cost and effort of fixing them later.
+2- Automate Scans: Automate SAST scans as part of your Continuous Integration/Continuous Deployment (CI/CD) pipeline. This ensures regular and consistent testing without manual intervention.
+3- Prioritize Critical Issues: Focus on addressing high-severity vulnerabilities first. Use context-aware prioritization to identify the most critical issues that could impact security.
+4- Provide Developer Training: Educate developers on secure coding practices and how to interpret SAST results. This empowers them to write more secure code and address vulnerabilities effectively.
+5- Customize Rulesets: Tailor the SAST tool's rules to match your application's specific requirements and coding standards. This minimizes false positives and ensures relevant results.
+6- Perform Incremental Scans: Use change-based scanning to analyze only the modified parts of the code. This speeds up the process and provides quicker feedback to developers.
+7- Integrate with Developer Tools: Embed SAST tools into Integrated Development Environments (IDEs) to provide real-time feedback as developers write code.
+8- Review and Validate Results: Regularly review SAST reports to validate findings and eliminate false positives. Collaborate with security teams to ensure accurate assessments.
+9- Combine with Other Testing Methods: Use SAST alongside other security testing methods like Dynamic Application Security Testing (DAST) and penetration testing for comprehensive coverage.
+10- Monitor and Update: Continuously update SAST tools to include the latest vulnerability definitions and adapt to evolving security threats.
+
+DAST (dynamic Application Security Testing):
+=================================================================
+Dynamic Application Security Testing (DAST) is a method used to identify security vulnerabilities in web applications, APIs, and mobile apps by analyzing them during runtime. Unlike Static Application Security Testing (SAST), which examines the source code, DAST evaluates the application from the "outside in," simulating real-world attacks to uncover potential weaknesses.
+
+How DAST Works:
+1. Runtime Analysis:  
+   DAST tools test the application while it is running, mimicking the behavior of a malicious user. This allows them to identify vulnerabilities that only appear during execution, such as runtime flaws or configuration issues.
+
+2. Black-Box Testing:  
+   DAST is often referred to as "black-box testing" because it doesn't require access to the application's source code. Instead, it interacts with the application through its user interface or APIs.
+
+3. Simulated Attacks:  
+   The tool performs automated attacks, such as SQL injection, Cross-Site Scripting (XSS), and authentication bypass attempts, to identify exploitable vulnerabilities.
+
+4. Report Generation:  
+   After testing, DAST tools generate detailed reports highlighting the vulnerabilities found, their severity, and recommendations for remediation.
+
+Benefits of DAST:
+- Detects vulnerabilities in real-world scenarios.
+- Independent of programming languages or frameworks.
+- Identifies issues like misconfigurations, authentication errors, and runtime flaws.
+
+Limitations of DAST:
+- Cannot pinpoint the exact location of vulnerabilities in the code.
+- Requires a running application, so it is typically used later in the development cycle.
+- May require expertise to interpret results effectively.
+
